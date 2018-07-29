@@ -36,11 +36,11 @@ Command:
 python encrypt.py -s SCRIPTS_DIR -e ENTRY_POINT_LIST -o OUTPUT_DIR [--exclude EXCLUDED_SCRIPT_LIST]
 ```
 
-***SCRIPTS_DIR*** is your python project root directory.  
-***ENTRY_POINT_LIST*** is a comma separated list of file function pair which is directly ran as the entry point of your programme.
+* ***SCRIPTS_DIR*** is your python project root directory.  
+* ***ENTRY_POINT_LIST*** is a comma separated list of file function pair which is directly ran as the entry point of your programme.
 For example "app.py:main,test_app.py:run_test".  
-***OUTPUT_DIR*** is the destination directory to store the encrypted python scripts.  
-***EXCLUDED_SCRIPT_LIST*** is a comma separated list of python scripts which you don't wan to encrypt.
+* ***OUTPUT_DIR*** is the destination directory to store the encrypted python scripts.  
+* ***EXCLUDED_SCRIPT_LIST*** is a comma separated list of python scripts which you don't wan to encrypt.
 
 You need to put ***libpyprotect.cpython-PYVERSION-PLATFORM.so*** into the ***OUTPUT_DIR*** as part of your programme.
 
