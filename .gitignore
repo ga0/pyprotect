@@ -1,0 +1,10 @@
+deps/pybind11
+build/
+.DS_Store
+cmake-build-debug/
+objs/
+venv/
+.idea/
+test/dest
+__pycache__/
+.vscode/
