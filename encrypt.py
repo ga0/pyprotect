@@ -25,7 +25,7 @@ if __name__ == '__main__':
     wrap_file = os.path.join(root, modname + '.py')
     with open(wrap_file, 'w') as f:
         f.write(content)
-    print('Entrance "%s:%s"' % (wrap_file, entrance_func))
+    print('Entry point "%s:%s"' % (wrap_file, entrance_func))
 
 
 def encrypt_file(root, outroot, fname, enc_fname):
@@ -47,7 +47,7 @@ def encrypt_file(root, outroot, fname, enc_fname):
 def encrypt_tree(srcroot, entrances, destroot, excludes):
     for e, _ in entrances:
         if not os.path.exists(e):
-            print('Entrance file "%s" not found' % e)
+            print('Entry point file "%s" not found' % e)
             exit(-1)
 
     for root, _, files in os.walk(str(srcroot)):
@@ -60,12 +60,7 @@ def encrypt_tree(srcroot, entrances, destroot, excludes):
                     print('Makedir "%s"' % outroot)
                     os.mkdir(outroot)
 
-                ignore = False
-                for fex in excludes:
-                    if fpath == fex:
-                        ignore = True
-                        break
-                if ignore:
+                if fpath in excludes:
                     shutil.copyfile(fpath, os.path.join(outroot, f))
                     print('Ignore "%s"' % fpath)
                     continue
