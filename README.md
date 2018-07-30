@@ -12,7 +12,7 @@
 
 ## How it works?
 
-![how-it-works](https://raw.githubusercontent.com/ga0/pyprotect/master/how-it-works.png)
+![how-it-works](https://raw.githubusercontent.com/ga0/pyprotect/master/docs/how-it-works.png)
 
 
 ## Build pyprotect
