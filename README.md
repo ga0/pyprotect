@@ -10,6 +10,11 @@
 
 ***Only python3.x is supported by current version***
 
+## How it works?
+
+![how-it-works](https://raw.githubusercontent.com/ga0/pyprotect/master/how-it-works.png)
+
+
 ## Build pyprotect
 
 * Download [pybind11](https://github.com/pybind/pybind11/releases) library:
